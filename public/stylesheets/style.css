@@ -7,13 +7,13 @@ body, html {
   padding: 0;
   margin: 0;
   font-family: sans-serif;
-  color: whitesmoke;
-  background-color: rgb(59, 26, 47);
+  color: gray;
+  background-color: whitesmoke;
 }
 
 a {
   text-decoration: none;
-  color: wheat;
+  color: brown;
   font-weight: bold;
   transition: color .1s;
 }
@@ -27,7 +27,7 @@ nav > a {
 }
 
 button {
-  background-color: wheat;
+  background-color: gray;
   border: 0;
   padding: 1%;
   color: black;
@@ -42,6 +42,7 @@ button:hover {
 }
 
 .post-list {
+  list-style-type: none;
   margin: 0;
   padding: 0;
 }
@@ -102,7 +103,7 @@ main {
   padding: 0;
   cursor: pointer;
   text-decoration: none;
-  color: wheat;
+  color: brown;
   font-size: 100%;
   font-weight: bold;
   transition: color .1s;
@@ -123,14 +124,21 @@ main {
 }
 
 .post {
+  /* padding: 8px; */
   margin-bottom: 2%;
   line-height: 150%;
+  border: gray solid 3px;
+}
+
+.post-body {
+  padding: 2px;
 }
 
 .post .title span {
+  float: right;
   font-style: italic;
-  font-size: 90%;
-  color: #7d7d7d;
+  font-size: 60%;
+  color: black;
 }
 
 .edit-link {
@@ -174,35 +182,14 @@ footer {
 }
 
 
-
-
-.card-wrapper {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 5px;
-  grid-auto-rows: minmax(100px, auto);
-}
-
-.card-container {
-  text-align: center;
-}
-.card-container > img {
-  width: 100%;
-}
-.remove-card-btn {
-  width: 100%;
-  background-color: #d41414;
-}
-.remove-card-btn:hover {
-  background-color: #ff643d;
-}
 .post-title{
+  padding: 5px;
   font-size: 22px;
+  background-color: rgba(128, 128, 128, 0.363);
 }
-.add-card-btn{
-  width: 100%;
-  background-color: rgb(17, 129, 17);
-}
-.add-card-btn:hover {
-  background-color: rgb(49, 167, 49);
+
+.home-title-link{
+  padding: 5px;
+  border: black solid 2px;
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.25) ;
 }
