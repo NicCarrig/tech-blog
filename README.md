@@ -1,3 +1,5 @@
+Deployed: https://serene-peak-89242.herokuapp.com/
+
 # Challenge 14 - Tech Blog
 
 ## Description
